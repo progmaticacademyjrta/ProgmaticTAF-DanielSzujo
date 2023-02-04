@@ -9,7 +9,7 @@ public class LoginPageTest extends DriverBaseTest {
     LoginPage loginPage;
     HomePage homePage;
 
-    @Test(groups = {"PageTests"},description = "TC03: Login with wrong password and username, check error message appear.")
+    @Test(groups = {"PageTests"}, description = "TC03: Login with wrong password and username, check error message appear.")
     public void LoginWithWrongPasswordAndUsernameCheckErrorMessage() {
         homePage = new HomePage(driver, wait);
         loginPage = new LoginPage(driver, wait);

@@ -7,13 +7,13 @@ import org.testng.annotations.Test;
 public class HomePageTest extends DriverBaseTest {
     HomePage homePage;
 
-    @Test(groups = {"PageTests"},description = "TC01: Homepage loaded test that loads the page and validates whether the header is displayed or not.")
+    @Test(groups = {"PageTests"}, description = "TC01: Homepage loaded test that loads the page and validates whether the header is displayed or not.")
     public void homepageLoadedTest() {
         homePage = new HomePage(driver, wait);
         homePage.loadHomePage();
     }
 
-    @Test(description = "TC02: Check Make Appointment button is clickable.")
+    @Test(groups = {"PageTests"}, description = "TC02: Check Make Appointment button is clickable.")
     public void makeAppointmentButtonClickTest() {
         homePage = new HomePage(driver, wait);
         homePage.loadHomePage();

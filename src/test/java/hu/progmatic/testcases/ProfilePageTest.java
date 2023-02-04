@@ -11,7 +11,7 @@ public class ProfilePageTest extends DriverBaseTest {
     LoginPage loginPage;
     ProfilePage profilePage;
 
-    @Test(groups = {"PageTests"},description = "TC05: Check Profile page can be loaded.")
+    @Test(groups = {"PageTests"}, description = "TC05: Check Profile page can be loaded.")
     public void ProfilePageLoadTest() {
         homePage = new HomePage(driver, wait);
         loginPage = new LoginPage(driver, wait);

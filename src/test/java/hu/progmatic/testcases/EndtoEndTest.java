@@ -13,7 +13,7 @@ public class EndtoEndTest extends DriverBaseTest {
     AppointmentPage appointmentPage;
     SummaryPage summaryPage;
 
-    @Test(groups = {"EndToEnd"},description = "TC06: End to end Test. Make an appointment and redirect to home page.")
+    @Test(groups = {"EndToEnd"}, description = "TC06: End to end Test. Make an appointment and redirect to home page.")
     public void EndToEndTest() throws InterruptedException {
         homePage = new HomePage(driver, wait);
         loginPage = new LoginPage(driver, wait);
